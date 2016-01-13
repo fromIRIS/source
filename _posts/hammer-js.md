@@ -1,7 +1,7 @@
 title: "hammerjs的初次学习"
-categories: javascript
-tags: [javascript]
-description: hammerjs的初次学习
+date: 2015-09-28 00:00:09
+categories: js
+tags: [hammer]
 ---
 
 ##hammerjs的初次学习

@@ -1,6 +1,7 @@
 title: "The Principles of object-oriented javascript阅读笔记"
 date: 2015-11-29 23:52:59
-tags: [书籍阅读]
+categories: 书籍阅读
+tags: [面向对象的js]
 ---
 
 ##The principles of object-oriented javascript阅读笔记

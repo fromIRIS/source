@@ -1,7 +1,7 @@
 title: "关于BFC的一些事儿"
 date: 2015-06-08 22:58:17
-categories: html&css
-tags: [html&css]
+categories: css
+tags: [BFC]
 ---
 
 ##**关于BFC的一些事儿**：
@@ -19,7 +19,7 @@ BFC（Block Formatting Context），中文为块状格式化上下文。
 `BFC与清除浮动`
 在需要清除浮动的时候
 `1`overflow: hidden
-![Alt text](../img/1433772289741.png)
+![Alt text](http://7xpcne.com1.z0.glb.clouddn.com/BFC1433772289741.png)
 **解释如下：**
 根据 CSS2.1 规范第 10.6.3 部分的高度计算规则，在进行普通流中的块级非替换元素的高度计算时，浮动子元素不参与计算。
 
@@ -36,7 +36,7 @@ BFC（Block Formatting Context），中文为块状格式化上下文。
 **即使父元素触发BFC，里面的正常流中的子元素之间还是会发生塌陷。**
 因为触发BFC的两个元素相对独立，所以解决了塌陷，这个比较好理解。
 对于嵌套元素之间的塌陷，即下图：
-![Alt text](../img/1433775283824.png)
+![Alt text](http://7xpcne.com1.z0.glb.clouddn.com/BFC1433775283824.png)
 
 **合理解释为：**
 根据 CSS 2.1 8.3.1 Collapsing margins 第三条，生成 block formatting context 的元素不会和在流中的子元素发生空白边折叠。

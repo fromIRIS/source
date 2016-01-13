@@ -1,6 +1,7 @@
 title: "lazyload.js源码学习"
 date: 2015-09-28 00:59:55
-tags:
+categories: 源码
+tags: [lazyload]
 ---
 
 

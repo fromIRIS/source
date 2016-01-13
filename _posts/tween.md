@@ -1,6 +1,6 @@
 title: "tweenMax基础api的逐条随意翻译"
 categories: 动画库
-tags: [jsLib]
+tags: [tween]
 ---
 ###tweenMax基础api的逐条随意翻译
 

@@ -1,8 +1,7 @@
 title: "github学习"
 date: 2015-09-28 00:56:09
 categories: 前端
-tags: [杂]
-description: git及github的命令行学习
+tags: [github]
 ---
 
 

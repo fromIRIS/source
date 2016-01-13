@@ -1,7 +1,7 @@
 title: "zepto.fullpage源码注释理解"
 date: 2015-08-03 01:07:28
-categories: javascript
-tags: [javascript]
+categories: 源码
+tags: [zepto.fullpage]
 ---
 
 ###zepto.fullpage的源码逐段注释理解

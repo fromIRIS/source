@@ -1,6 +1,7 @@
 title: "编写可维护的javascript阅读笔记"
 date: 2015-11-15 22:17:11
-tags: [书籍阅读]
+categories: 书籍阅读
+tags: [js质量]
 ---
 
 

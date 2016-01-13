@@ -1,6 +1,7 @@
 title: "attribute与property"
 date: 2015-10-12 22:42:58
-tags: [js]
+categories: js
+tags: [property&attribute]
 ---
 ##Dom节点Attribute与Property
 

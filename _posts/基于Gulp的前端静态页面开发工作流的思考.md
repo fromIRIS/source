@@ -1,6 +1,7 @@
 title: "基于Gulp的前端静态页面开发工作流的思考"
 date: 2015-12-07 01:09:39
-tags: [杂]
+categories: 前端工程
+tags: [gulp]
 ---
 ##基于Gulp的前端静态页面开发工作流的思考
 
@@ -18,7 +19,7 @@ root
 但是可视化工具比如`codekit`的一个缺点就是可拓展性不高，局限于软件本身的功能。使用`gulp`以及强大的插件机制，可以带来无限的可能。
 首先的问题就是项目文件目录该如何规划。如果只是上面提到的形式，生产代码跟发布代码混在同一个文件下，容易混淆。如果针对生产环境和发布环境分别对应一个文件夹就会清晰很多，如果两个文件夹的下属目录名称也相同，html文件引用资源的相对路径也就不需要改了。
 先来看下项目脚手架的形式
-![Alt text](../img/1449414186845.png)
+![Alt text](http://7xpcne.com1.z0.glb.clouddn.com/NYGulp1.png)
 - `src`为生产源代码，在编写的时候的代码都应该放入这个文件目录下，包括html文件。
 - `dist`为上线的代码，里面存放的都是从src文件夹里压缩编译后的优化代码，包括html文件。
 - `node_modules`存放的是相关于gulp的npm包。
@@ -27,7 +28,7 @@ root
 - `package.json`gulp所需插件的包管理。
 
 再来展开看一下`src`目录。
-![Alt text](../img/1449414710248.png)
+![Alt text](http://7xpcne.com1.z0.glb.clouddn.com/NYGulp2.png)
 生产源代码文件src下的目录结构
 - `css` 同文件下less编译后得到。
 - `images` 图片
@@ -37,7 +38,7 @@ root
 -  `index.html`  主页面
 
 再来看下`dist`文件目录
-![Alt text](../img/1449415103986.png)
+![Alt text](http://7xpcne.com1.z0.glb.clouddn.com/NYGulp3.png)
 - `css`  src下的css文件压缩后得到
 - `images` src下的images压缩得到
 -  `js`  src下的js文件压缩混淆得到
@@ -94,8 +95,8 @@ gulp.task("html", function() {
 gulp.task("default", ["serve"])
 ```
 但是现在在编写代码的同时怎么还能持续的`command+R`呢，必须要用上时时刷新浏览器的功能啊，所以在代码编写的阶段，还要用到强大的`browser-sync`。这个插件最神奇的地方莫过于在一个终端操作，其他终端都能实时变化。比如在pc端填写表单，H5端也能实时的自动填写表单。
-![Alt text](../img/4120131606.gif)
-
+![][gif]
+[gif]:http://7xpcne.com1.z0.glb.clouddn.com/NYGulp4120131606.gif
 ### 发布阶段 /1
 代码写完了，在各个端都测试过觉得样式交互都ok了，感觉可以放到测试环境看看了，这个时候就可以对js文件进行压缩混淆，对css文件进行压缩，对图片进行压缩了。
 这个时候在这个项目的根目录下执行这样的语句。
@@ -127,3 +128,6 @@ browser-sync使用 http://segmentfault.com/a/1190000002919912
 百度前端脚手架文档： https://github.com/ecomfe/spec/blob/master/directory.md#level1
 手淘前端自动化： https://github.com/amfe/article/issues/8
 JGulp脚手架： http://segmentfault.com/a/1190000002658165
+完！
+
+原创文章，转载请注明出处！

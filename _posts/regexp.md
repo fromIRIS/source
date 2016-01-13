@@ -1,6 +1,6 @@
 title: "js中的正则表达式"
 date: 2015-06-10 22:13:15
-categories: javascript
+categories: js
 tags: [Regexp]
 ---
 

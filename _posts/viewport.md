@@ -1,7 +1,7 @@
 title: "viewport中的width、inital-scale简介"
 date: 2015-07-12 23:02:56
-categories: html&css
-tags: [web移动端]
+categories: 前端
+tags: [viewport]
 ---
 ##web移动端开发
 ###viewport
